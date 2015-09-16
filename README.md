@@ -13,7 +13,7 @@ Fantasy Football!!!
 8. Add a panel with a header that says "My NFL Roster"
 9. Wrap the panel in a div with the class "container".
 10. Inside the body, create 2 child divs, one with the class "player-roster" and one with the class "player-form"
-11. Inside the player-roster div, add another dive with the class "player-card" 
+11. Inside the player-roster div, add another div with the class "player-card" 
   - Set the player-card class to "display:inline-block" and add a "1px solid black" border
   - Add an image to the player card with the src = "http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"
   - display the player's name

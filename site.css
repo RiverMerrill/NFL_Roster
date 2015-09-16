@@ -1,0 +1,21 @@
+.player-card{
+	display: inline-block;
+	border: 2px solid lightgrey;
+	margin-left: 4px;
+	margin-bottom: 10px;
+}
+.PlayerName, .PlayerPosition, .PlayerNumber{
+	text-align:center;
+}
+.player-form{
+	text-align:center;
+}
+.selected{
+	opacity: 0.4;
+}
+img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	padding: 3%;
+}
