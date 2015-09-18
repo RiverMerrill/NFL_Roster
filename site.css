@@ -19,3 +19,6 @@ img {
 	border-radius: 50%;
 	padding: 3%;
 }
+.hover-show{
+	visibility: visible;
+}
