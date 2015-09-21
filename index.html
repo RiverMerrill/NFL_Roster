@@ -10,17 +10,12 @@
 
 <body>
 	<div class="container">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h1 class="panel-title">
-				My NFL Roster
-				</h1>
-			</div>
+		<div class="panel">
 			<div class="panel-body">
 				<div id="results"></div>
 				<div class="player-roster">
 				</div>
-				<div class="panel panel-info">
+				<div class="panel">
 					<div class="panel-heading">
 						<h3 class="panel-title" style="text-align:center">Enter a new player:</h3>
 					</div>
@@ -31,8 +26,12 @@
 									<label for="playerName">Player Name:</label>
 									<input type="text" class="form-control" id="playerName" />
 									<br/>
-									<input class="btn btn-default" id="buttonAdd" type="button" value="Add" />
-									<input class="btn btn-danger" id="buttonRemove" type="button" value="Remove Selected" />
+									<button class="btn btn-default" id="buttonAdd" type="button">
+										Add <span class="glyphicon glyphicon-plus"></span>
+									</button>
+									<button class="btn btn-danger" id="buttonRemove" type="button">
+										Remove Selected <span class="glyphicon glyphicon-trash"></span>
+									</button>
 									<br/>
 									<h5 class="buttonShow" style="visibility: hidden"'>Click on a player to select.</h5>
 								</div>
