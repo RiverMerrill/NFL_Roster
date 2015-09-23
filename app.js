@@ -12,15 +12,19 @@ function loadPlayerData(forceReload) {
 	if (cache && !forceReload) {
 		players = cache;
 		players.forEach(function (player) {
+			if(player.firstname !== ''){
 			playerNames.push(player.fullname);
+			}
 		})
 		$("#playerName").autocomplete({ source: playerNames });
-	} else {
+		} else {
 		$.getJSON(apiUrl, function (data) {
 			players = data.body.players;
 			localStorage.setItem("playerData", JSON.stringify(players));
 			players.forEach(function (player) {
+				if(player.firstname !== ''){
 				playerNames.push(player.fullname);
+				}
 			})
 			$("#playerName").autocomplete({ source: playerNames });
 		});
@@ -28,7 +32,6 @@ function loadPlayerData(forceReload) {
 }
 
 loadPlayerData();
-
 $('#buttonAdd').on('click', function () {
 	var playerName = $('#playerName').val();
 	$('<div></div>').appendTo('.player-roster').addClass('player-card').on('click', function () {
